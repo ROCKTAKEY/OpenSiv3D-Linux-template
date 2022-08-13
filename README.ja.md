@@ -12,10 +12,10 @@ Linuxでそのままビルドできるようにしておくためのテンプレ
 4. 「Create repository from template」を押下
 
 ### プロジェクト名の変更
-- 2行目の`OpenSiv3D_Linux_App`という語を任意の名前に変更する。
+- [CMakeLists.txt](CMakeLists.txt)の2行目の`OpenSiv3D_Linux_App`という語を任意の名前に変更する。
 
 ### 実行ファイルの名前の変更
-- 全ての`Siv3DExampleProject`という単語を任意の名前に置換する。
+- [CMakeLists.txt](CMakeLists.txt)の全ての`Siv3DExampleProject`という単語を任意の名前に置換する。
 
 ### Linuxでビルドする
 1. 自分のプロジェクトをクローン(`<username>`と`<your-project>`は適宜自分のものに変えてください)
