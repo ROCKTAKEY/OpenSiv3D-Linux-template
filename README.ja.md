@@ -11,12 +11,6 @@ Linuxでそのままビルドできるようにしておくためのテンプレ
 3. 「Public」「Private」を選択
 4. 「Create repository from template」を押下
 
-### プロジェクト名の変更
-- [CMakeLists.txt](CMakeLists.txt)の2行目の`OpenSiv3D_Linux_App`という語を任意の名前に変更する。
-
-### 実行ファイルの名前の変更
-- [CMakeLists.txt](CMakeLists.txt)の全ての`Siv3DExampleProject`という単語を任意の名前に置換する。
-
 ### Linuxでビルドする
 1. 自分のプロジェクトをクローン(`<username>`と`<your-project>`は適宜自分のものに変えてください)
 ```shell
@@ -52,8 +46,19 @@ git clone https://github.com/<username>/<your-project>
 ```shell
 ./Siv3DExampleProject
 ```
+
+## CMakeLists.txtの書き換え
+この項は必ずしも行う必要はないですが、公開するときにプロジェクトや実行ファイルの名前が独自のもののほうがかっこいいです。
+また、複数ファイルにまたがる大きなプロジェクトとなるときには、対象を追加するために必要になります。
+
+### プロジェクト名の変更
+- [CMakeLists.txt](CMakeLists.txt)の2行目の`OpenSiv3D_Linux_App`という語を任意の名前に変更する。
+
+### 実行ファイルの名前の変更
+- [CMakeLists.txt](CMakeLists.txt)の全ての`Siv3DExampleProject`という単語を任意の名前に置換する。
+
 ### cppファイルの追加
-- `# Add cpp files here`以降にcppファイルを追加する
+- [CMakeLists.txt](CMakeLists.txt)の`# Add cpp files here`以降にcppファイルを追加する
 
 ## トラブルシューティング
 ### エディタや言語サーバーがSiv3Dをみつけられず、エラーを大量に表示してしまう
